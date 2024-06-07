@@ -2,6 +2,16 @@
 <html>
   <head>
     <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Kanit font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Merriweather font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <h1 id="title">ASRUN Idol audition application</h1>
@@ -14,50 +24,59 @@
     <form id="survey-form">
       <fieldset id="section-personal-information">
         <legend>Personal information</legend>
+
+        <div class="input-element">
+          <label id="name-label" for="name">Your full name</label>
+          <input id="name" type="text" placeholder="Hanasato Minori" required />
+        </div>
+
+        <div class="input-element">
+          <legend>Your gender</legend>
+  
+          <div>
+            <input id="gender-option1" name="radio" type="radio" value="option1" checked />
+            <label for="gender-option1">Female</label>
+          </div>
+  
+          <div>
+            <input id="gender-option2" name="radio" type="radio" value="option2" />
+            <label for="gender-option2">Male</label>
+          </div>
+  
+          <div>
+            <input id="gender-option3" name="radio" type="radio" value="option3" />
+            <label for="gender-option3">Other/would rather not say</label>
+          </div>
+        </div>
         
-        <label id="name-label" for="name">Your full name</label>
-        <input id="name" type="text" placeholder="Hanasato Minori" required />
-
-        <legend>Your gender</legend>
-
-        <div>
-          <input id="gender-option1" name="radio" type="radio" value="option1" checked />
-          <label for="gender-option1">Female</label>
+        <div class="input-element">
+          <label id="number-label" for="number">Years of experience (leave empty if 0)</label>
+          <input id="number" type="number" placeholder="0" min="1" max="10" />
         </div>
 
-        <div>
-          <input id="gender-option2" name="radio" type="radio" value="option2" />
-          <label for="gender-option2">Male</label>
+        <div class="input-element">
+          <label id="email-label" for="email">Your email adress</label>
+          <input id="email" type="email" placeholder="hanasato.minori@mmj.jp" required />
         </div>
-
-        <div>
-          <input id="gender-option3" name="radio" type="radio" value="option3" />
-          <label for="gender-option3">Other/would rather not say</label>
-        </div>
-        
-        <label id="number-label" for="number">Years of experience (leave empty if 0)</label>
-        <input id="number" type="number" placeholder="0" min="1" max="10" />
-
-        <label id="email-label" for="email">Your email adress</label>
-        <input id="email" type="email" placeholder="hanasato.minori@mmj.jp" required />
       </fieldset>
 
       <fieldset id="section-goals">
         <legend>Your goals in joining ASRUN</legend>
 
-        <label for="dropdown">If you had to decide, which activity would be your favorite?</label>
-        <select id="dropdown">
-          <option>(please choose)</option>
-          <option>Dancing on a stage</option>
-          <option>Singing popular songs</option>
-          <option>Meeting with fans</option>
-          <option>Doing variety shows</option>
-        </select>
+        <div class="input-element">
+          <label for="dropdown">If you had to decide, which activity would be your favorite?</label>
+          <select id="dropdown">
+            <option>(please choose)</option>
+            <option>Dancing on a stage</option>
+            <option>Singing popular songs</option>
+            <option>Meeting with fans</option>
+            <option>Doing variety shows</option>
+          </select>
+        </div>
 
-        
-        <fieldset id="section-experience">          
-          <legend>Please check every aspect of idol life you are already experienced in</label>
+        <legend>Please check every aspect of idol life you are already experienced in</label>
 
+        <div class="input-element">
           <div>
             <input id="experience-option1" name="checkbox" type="checkbox" value="option1" checked />
             <label for="experience-option1">Singing</label>
@@ -82,20 +101,20 @@
             <input id="experience-option5" name="checkbox" type="checkbox" value="option5" />
             <label for="experience-option5">Other (please specify in the field below)</label>
           </div>
-
+          
           <input id="experience-option6" type="text" placeholder="..." />
+        </div>
 
-        </fieldset>
-
-        </fieldset>
-        
-        <fieldset id="section-comments">
+        <div class="input-element">
           <legend>Do you have any specific comments or requests before your audition?</legend>
 
           <textarea id="comments" name="comments" rows="10" cols="50" placeholder="Write your text here!"></textarea>
-        </fieldset>
-
-        <input id="submit" type="submit" value="Submit your application!">
+        </div>
+        
+        <div class="input-element">
+          <input id="submit" type="submit" value="Submit your application!">
+        </div>
+      </fieldset>
     </form>
   </body>
 

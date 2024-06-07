@@ -1,2 +1,12 @@
-label {
+html {
+  font-family: Merriweather, sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  width: 50%;
+}
+
+h1 {
+  font-family: Kanit, serif;
 }
