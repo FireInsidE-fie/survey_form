@@ -12,20 +12,32 @@
     </p>
 
     <form id="survey-form">
-      <fieldset>
+      <fieldset id="personal-information">
         <legend>Personal information</legend>
         
-        <label for="name">Your full name</label>
-        <input id="name" type="text" required>
+        <label id="name-label" for="name">Your full name</label>
+        <input id="name" type="text" placeholder="Hanasato Minori" required />
 
-        <label>Your email adress</label>
-        <input id="email" type="text" required>
+        <label id="email-label" for="email">Your email adress</label>
+        <input id="email" type="email" placeholder="hanasato.minori@mmj.jp" required />
+
+        <label id="number-label" for="number">Years of experience (leave empty if 0)</label>
+        <input id="number" type="number" placeholder="17" min="1" max="10" />
+      </fieldset>
+
+      <fieldset id="goals">
+        <legend>Your goals in joining ASRUN</legend>
+
+        <label for="dropdown"></label>
+        <select id="dropdown">
+          <option></option>
+        </select>
       </fieldset>
 
     </form>
   </body>
 
   <footer>
-    <p>Aisling Fontaine | v0.2</p>
+    <p>Aisling Fontaine | v0.3</p>
   </footer>
 </html>
