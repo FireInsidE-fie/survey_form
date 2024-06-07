@@ -12,7 +12,7 @@
     </p>
 
     <form id="survey-form">
-      <fieldset id="personal-information">
+      <fieldset id="section-personal-information">
         <legend>Personal information</legend>
         
         <label id="name-label" for="name">Your full name</label>
@@ -42,7 +42,7 @@
         <input id="email" type="email" placeholder="hanasato.minori@mmj.jp" required />
       </fieldset>
 
-      <fieldset id="goals">
+      <fieldset id="section-goals">
         <legend>Your goals in joining ASRUN</legend>
 
         <label for="dropdown">If you had to decide, which activity would be your favorite?</label>
@@ -55,7 +55,7 @@
         </select>
 
         
-        <fieldset>          
+        <fieldset id="section-experience">          
           <legend>Please check every aspect of idol life you are already experienced in</label>
 
           <div>
@@ -83,16 +83,23 @@
             <label for="experience-option5">Other (please specify in the field below)</label>
           </div>
 
-          <input id="experience-option6" type="text" placeholder="..." required />
+          <input id="experience-option6" type="text" placeholder="..." />
 
         </fieldset>
 
-      </fieldset>
+        </fieldset>
+        
+        <fieldset id="section-comments">
+          <legend>Do you have any specific comments or requests before your audition?</legend>
 
+          <textarea id="comments" name="comments" rows="10" cols="50" placeholder="Write your text here!"></textarea>
+        </fieldset>
+
+        <input id="submit" type="submit" value="Submit your application!">
     </form>
   </body>
 
   <footer>
-    <p>Aisling Fontaine | v0.4</p>
+    <p>Aisling Fontaine | v1.0</p>
   </footer>
 </html>
