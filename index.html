@@ -18,26 +18,81 @@
         <label id="name-label" for="name">Your full name</label>
         <input id="name" type="text" placeholder="Hanasato Minori" required />
 
+        <legend>Your gender</legend>
+
+        <div>
+          <input id="gender-option1" name="radio" type="radio" value="option1" checked />
+          <label for="gender-option1">Female</label>
+        </div>
+
+        <div>
+          <input id="gender-option2" name="radio" type="radio" value="option2" />
+          <label for="gender-option2">Male</label>
+        </div>
+
+        <div>
+          <input id="gender-option3" name="radio" type="radio" value="option3" />
+          <label for="gender-option3">Other/would rather not say</label>
+        </div>
+        
+        <label id="number-label" for="number">Years of experience (leave empty if 0)</label>
+        <input id="number" type="number" placeholder="0" min="1" max="10" />
+
         <label id="email-label" for="email">Your email adress</label>
         <input id="email" type="email" placeholder="hanasato.minori@mmj.jp" required />
-
-        <label id="number-label" for="number">Years of experience (leave empty if 0)</label>
-        <input id="number" type="number" placeholder="17" min="1" max="10" />
       </fieldset>
 
       <fieldset id="goals">
         <legend>Your goals in joining ASRUN</legend>
 
-        <label for="dropdown"></label>
+        <label for="dropdown">If you had to decide, which activity would be your favorite?</label>
         <select id="dropdown">
-          <option></option>
+          <option>(please choose)</option>
+          <option>Dancing on a stage</option>
+          <option>Singing popular songs</option>
+          <option>Meeting with fans</option>
+          <option>Doing variety shows</option>
         </select>
+
+        
+        <fieldset>          
+          <legend>Please check every aspect of idol life you are already experienced in</label>
+
+          <div>
+            <input id="experience-option1" name="checkbox" type="checkbox" value="option1" checked />
+            <label for="experience-option1">Singing</label>
+          </div>
+  
+          <div>
+            <input id="experience-option2" name="checkbox" type="checkbox" value="option2" />
+            <label for="experience-option2">Choregraphy alone or in a group</label>
+          </div>
+  
+          <div>
+            <input id="experience-option3" name="checkbox" type="checkbox" value="option3" />
+            <label for="experience-option3">Performing on a stage</label>
+          </div>
+  
+          <div>
+            <input id="experience-option4" name="checkbox" type="checkbox" value="option4" />
+            <label for="experience-option4">Fan interactions</label>
+          </div>
+  
+          <div>
+            <input id="experience-option5" name="checkbox" type="checkbox" value="option5" />
+            <label for="experience-option5">Other (please specify in the field below)</label>
+          </div>
+
+          <input id="experience-option6" type="text" placeholder="..." required />
+
+        </fieldset>
+
       </fieldset>
 
     </form>
   </body>
 
   <footer>
-    <p>Aisling Fontaine | v0.3</p>
+    <p>Aisling Fontaine | v0.4</p>
   </footer>
 </html>
