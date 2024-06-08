@@ -31,7 +31,7 @@
         </div>
 
         <div class="input-element">
-          <legend>Your gender</legend>
+          <label>Your gender</label>
   
           <div>
             <input id="gender-option1" name="radio" type="radio" value="option1" checked />
@@ -74,11 +74,11 @@
           </select>
         </div>
 
-        <legend>Please check every aspect of idol life you are already experienced in</label>
+        <label>Please check every aspect of idol life you are already experienced in</label>
 
         <div class="input-element">
           <div>
-            <input id="experience-option1" name="checkbox" type="checkbox" value="option1" checked />
+            <input id="experience-option1" name="checkbox" type="checkbox" value="option1" />
             <label for="experience-option1">Singing</label>
           </div>
   
@@ -106,19 +106,19 @@
         </div>
 
         <div class="input-element">
-          <legend>Do you have any specific comments or requests before your audition?</legend>
+          <label for="comments">Do you have any specific comments or requests before your audition?</label>
 
-          <textarea id="comments" name="comments" rows="10" cols="50" placeholder="Write your text here!"></textarea>
-        </div>
-        
-        <div class="input-element">
-          <input id="submit" type="submit" value="Submit your application!">
+          <textarea id="comments" class="input-element, field" name="comments" rows="10" placeholder="Write your text here!"></textarea>
         </div>
       </fieldset>
+
+      <div class="input-element">
+        <input id="submit" class="field" type="submit" value="Submit your application!">
+      </div>
     </form>
   </body>
 
   <footer>
-    <p>Aisling Fontaine | v1.1</p>
+    <p>Aisling Fontaine | v1.3</p>
   </footer>
 </html>
