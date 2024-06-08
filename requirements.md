@@ -2,7 +2,7 @@
 
 Objective: Build an app that is functionally similar to [https://survey-form.freecodecamp.rocks]. Do not copy this demo project.
 
-_User Stories:_
+_Goals:_
 
     [x] You should have a page title in an h1 element with an id of title
     [x] You should have a short explanation in a p element with an id of description
@@ -21,7 +21,7 @@ _User Stories:_
     [x] Inside the form element, you are presented with a textarea for additional comments
     [x] Inside the form element, you are presented with a button with id of submit to submit all the inputs
 
-Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
+Fulfill the user stories and pass all the tests to complete this project. Give it your own personal style. Happy Coding!
 
 Note: Be sure to add `<link rel="stylesheet" href="styles.css">` in your HTML to link your stylesheet and apply your CSS
 
