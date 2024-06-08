@@ -1,11 +1,11 @@
 * {
-   /* This makes the browser calculate the width not just with the content, but
-   including padding and border as well. */
+  /* This makes the browser calculate the width not just
+  with the content, but including padding and border as well. */
   box-sizing: border-box;
 }
 
 html {
-  font-family: Merriweather, sans-serif;
+  font-family: Kanit, Merriweather, serif;
   background-image: linear-gradient(
     90deg,
     rgba(240, 248, 255, 0.8),
@@ -46,6 +46,7 @@ legend {
   padding: 10px 0;
 }
 
+/* Pretty much every input, except radios and checkboxes. */
 .field {
   display: block;
   width: 100%;
@@ -53,6 +54,19 @@ legend {
   margin: 5px 0;
 }
 
+input[type="checkbox"] {
+  padding: 10px;
+}
+
 #submit {
   width: 100%;
+}
+
+hr {
+  border: white 1px solid;
+}
+
+footer {
+  color: aliceblue;
+  text-align: center;
 }
