@@ -1,6 +1,6 @@
 # Build a Survey Form
 
-Objective: Build an app that is functionally similar to https://survey-form.freecodecamp.rocks. Do not copy this demo project.
+Objective: Build an app that is functionally similar to [https://survey-form.freecodecamp.rocks]. Do not copy this demo project.
 
 _User Stories:_
 
@@ -23,7 +23,6 @@ _User Stories:_
 
 Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
 
-Note: Be sure to add 
-`<link rel="stylesheet" href="styles.css">` in your HTML to link your stylesheet and apply your CSS
+Note: Be sure to add `<link rel="stylesheet" href="styles.css">` in your HTML to link your stylesheet and apply your CSS
 
-Example : https://survey-form.freecodecamp.rocks/
+Example : [https://survey-form.freecodecamp.rocks/]
